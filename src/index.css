@@ -12,11 +12,159 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
-}
 
+  /* Font sizes */
+
+  --primary-font: 1.3rem;
+  --secondary-font: 1.5rem;
+  --tertiary-font: 2rem;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   font-family: "Barlow", serif;
-  background-color: yellow;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*  NAVBAR STYLES  */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3ebfff;
+  padding: 1rem;
+}
+.navbar nav{
+  gap: 2.5rem;
+  align-items: center;
+  display: none;
+}
+.navbar nav.active{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5rem;
+  background-color: white;
+  width: 90%;
+  left: 50%;
+  gap: 2rem;
+  transform: translateX(-50%);
+  padding: 2rem;
+}
+.navbar nav.active::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid white;
+  rotate: 28deg;
+  margin-top: -55px;
+  right: 0;
+  transform: translateX(15px);
+}
+.navbar nav.active ul{
+  flex-direction: column;
+  gap: 2rem;
+}
+.navbar nav.active ul a{
+  color: grey;
+}
+.navbar nav.active button{
+  background: var(--yellow);
+}
+.navbar ul{
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  font-size: var(--priamry-font);
+  color: white;
+  font-weight: 600;
+}
+.navbar button{
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  border: none;
+}
+.navbar .menu{
+  cursor: pointer;
+}
+
+/* hero section */
+
+.hero{
+  padding: 7rem 0;
+  background-image: url('./assets/images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1{
+  color: white;
+  font-size: 3.1rem;
+  max-width: 20rem;
+  text-align: center;
+}
+.hero img{
+  margin-top: 3rem;
+  size: 4rem;
+  height: 5rem;
 }
 
 
+
+
+
+
+@media (min-width:37.5rem) {
+  .navbar nav{
+    display: flex;
+  }
+  .navbar .menu{
+    display: none;
+  }
+  .hero h1{
+    max-width: unset;
+  }
+  .hero{
+    background-image: url('./assets/images/desktop/image-header.jpg');
+    padding: 10rem 0;
+  }
+  .hero img{
+    margin-top: 2rem;
+    size: unset;
+    height: unset;
+  }
+  
+}
+
+@media (min-width:47rem) {
+  
+}
+
+@media (min-width:64rem) {
+  
+}
