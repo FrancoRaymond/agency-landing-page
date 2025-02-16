@@ -1,0 +1,43 @@
+.clientTestimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 1rem;
+}
+.clientTestimonials h1{
+    color: gray;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.clientTestimonials .testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.clientTestimonials .testimonials div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clientTestimonials .testimonials div img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.clientTestimonials .testimonials div p{
+    font-size: 1.1rem;
+    color: gray;
+    text-align: center;
+    margin-top: 2rem;
+}
+.clientTestimonials .testimonials div h3{
+   margin-top: 2rem;
+   font-weight: 700;
+}
+.clientTestimonials .testimonials div span{
+    margin-top: 0.5rem;
+    color: gray;
+ }

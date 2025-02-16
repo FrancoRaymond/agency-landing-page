@@ -1,0 +1,34 @@
+.features img{
+    width: 100%;
+  }
+  
+  .features .infoArea{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .features .infoArea h1{
+    font-size: 2rem;
+  }
+  
+  .features .infoArea p{
+    font-size: var(--primary-font);
+    color: var(--dark-grayish-blue);
+  }
+  
+  .features .infoArea button{
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .features article:nth-child(1) button{
+    text-decoration: underline 0.5rem var(--yellow);
+  }
+  .features article:nth-child(2) button{
+    text-decoration: underline 0.5rem var(--soft-red);
+  }
+  

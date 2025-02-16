@@ -1,0 +1,22 @@
+.hero{
+    padding: 7rem 0;
+    background-image: url('../../assets/images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero h1{
+    color: white;
+    font-size: 3.1rem;
+    max-width: 20rem;
+    text-align: center;
+  }
+  .hero img{
+    margin-top: 3rem;
+    size: 4rem;
+    height: 5rem;
+  }

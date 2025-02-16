@@ -1,5 +1,6 @@
 import React from 'react'
-import arrow from '../assets/images/icon-arrow-down.svg'
+import './hero.css'
+import arrow from '../../assets/images/icon-arrow-down.svg'
 
 const Hero = () => {
   return (

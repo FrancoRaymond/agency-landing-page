@@ -1,0 +1,27 @@
+.extras div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 23rem 1.2rem 4rem 1.2rem;
+  }
+  .extras div h1{
+    font-size: 1.5rem;
+  }
+  .extras div p{
+    font-size: var(--primary-font);
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 500;
+  }
+  .extras div:nth-child(1){
+    background: url('../../assets/images/mobile/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .extras div:nth-child(2){
+    background: url('../../assets/images/mobile/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
