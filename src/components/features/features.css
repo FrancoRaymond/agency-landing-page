@@ -11,6 +11,7 @@
   }
   .features .infoArea h1{
     font-size: 2rem;
+    font-family: 'Fraunces';
   }
   
   .features .infoArea p{
@@ -23,6 +24,7 @@
     border: none;
     font-weight: 700;
     font-size: 1.1rem;
+    font-family: 'Fraunces';
   }
   
   .features article:nth-child(1) button{

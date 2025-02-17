@@ -10,6 +10,7 @@
     color: gray;
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-family: 'Fraunces';
 }
 .clientTestimonials .testimonials{
     display: flex;
@@ -36,6 +37,7 @@
 .clientTestimonials .testimonials div h3{
    margin-top: 2rem;
    font-weight: 700;
+   font-family: 'Fraunces';
 }
 .clientTestimonials .testimonials div span{
     margin-top: 0.5rem;
