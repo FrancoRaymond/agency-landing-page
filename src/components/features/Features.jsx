@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './features.css'
 import imageTransformDesktop from '../../assets/images/desktop/image-transform.jpg'
 import imageTransformMobile from '../../assets/images/mobile/image-transform.jpg'
@@ -7,23 +7,12 @@ import imageStandoutMobile from '../../assets/images/mobile/image-stand-out.jpg'
 
 
 
-const Features = () => {
-    const [size, setSize] = useState(window.innerWidth)
+const Features = ({ size }) => {
     
-
-    useEffect(() => {
-        const handleResize = () => {
-            setSize(window.innerWidth)
-        };
-    
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-      }, []);
-
     return(
         <div className='features'>
             <article>
-                <img src={imageTransformMobile} alt="" />
+                <img src={size < 500 ? imageTransformMobile : imageTransformDesktop} alt="" />
                 <div className='infoArea'>
                     <h1>Transform your brand</h1>
                     <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -31,7 +20,7 @@ const Features = () => {
                 </div>
             </article>
             <article>
-                <img src={imageStandoutMobile} alt="" />
+                <img src={size < 500 ? imageStandoutMobile : imageStandoutktop} alt="" />
                 <div className='infoArea'>
                     <h1>Stand out to the right audience</h1>
                     <p>Using a collaborative formula of designers,researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital places.</p>

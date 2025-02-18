@@ -1,36 +1,81 @@
+@import '../../index.css';
 .features img{
-    width: 100%;
-  }
-  
-  .features .infoArea{
-    padding: 3rem 2rem;
+  width: 100%;
+}
+.features .infoArea{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+.features .infoArea h1{
+  font-size: 2rem;
+  font-family: 'Fraunces';
+}
+.features .infoArea p{
+  color: var(--dark-grayish-blue);
+  font-size: var(--primary-font);
+}
+
+.features .infoArea button{
+  background-color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Fraunces';
+}
+
+.features article:nth-child(1) button{
+  text-decoration: underline 0.5rem var(--yellow);
+}
+.features article:nth-child(2) button{
+  text-decoration: underline 0.5rem var(--soft-red);
+}
+
+@media (min-width:37.5rem) {
+  .features {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
+    flex-direction: column; 
   }
-  .features .infoArea h1{
-    font-size: 2rem;
-    font-family: 'Fraunces';
+  .features article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: stretch; 
+    min-height: 300px; 
   }
-  
-  .features .infoArea p{
-    font-size: var(--primary-font);
-    color: var(--dark-grayish-blue);
+  .features article > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    width: 100%; 
   }
-  
-  .features .infoArea button{
-    background-color: white;
-    border: none;
-    font-weight: 700;
-    font-size: 1.1rem;
-    font-family: 'Fraunces';
+
+  .features article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  
-  .features article:nth-child(1) button{
-    text-decoration: underline 0.5rem var(--yellow);
+  .features article:nth-child(1){
+    grid-template-areas: 
+      "div image"
+    ;
   }
-  .features article:nth-child(2) button{
-    text-decoration: underline 0.5rem var(--soft-red);
-  }
+  .features article:nth-child(1) img{ grid-area: image;}
+  .features article:nth-child(1) div{ grid-area: div;}
+}
+
+
+/*  MEDIUM DEVICES  */
+
+@media (min-width:47rem) {
+ 
+}
+
+/* LARGE DEVICES  */
+
+@media (min-width:64rem) {
+
+}
   

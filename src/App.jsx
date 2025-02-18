@@ -32,7 +32,7 @@ function App() {
     <>
       <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} handleMenuClick={handleMenuClick}/>
       <Hero />
-      <Features />
+      <Features size={size}/>
       <Extras />
       <Testimonials />
       <Gallery size={size}/>

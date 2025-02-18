@@ -1,3 +1,5 @@
+@import '../../index.css';
+
 .clientTestimonials{
     display: flex;
     justify-content: center;
@@ -29,10 +31,10 @@
     border-radius: 50%;
 }
 .clientTestimonials .testimonials div p{
-    font-size: 1.1rem;
     color: gray;
     text-align: center;
     margin-top: 2rem;
+    font-size: var(--primary-font);
 }
 .clientTestimonials .testimonials div h3{
    margin-top: 2rem;
@@ -41,5 +43,48 @@
 }
 .clientTestimonials .testimonials div span{
     margin-top: 0.5rem;
-    color: gray;
+    color: var(--grayish-blue);
  }
+
+@media (min-width:37.5rem) {
+    .clientTestimonials{
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+    .clientTestimonials .testimonials{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-template-rows: auto auto;
+    }
+    .clientTestimonials .testimonials div:nth-child(1){
+        grid-column: 1;
+    }
+    .clientTestimonials .testimonials div:nth-child(2){
+        grid-column: 2;
+    }
+    .clientTestimonials .testimonials div:nth-child(3){
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+
+@media (min-width:47rem) {
+    .clientTestimonials{
+        padding-left: 2.7rem;
+        padding-right: 2.7rem;
+    }
+    .clientTestimonials .testimonials{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .clientTestimonials .testimonials div:nth-child(3){
+        grid-column: 3;
+    }
+}
+
+@media (min-width:64rem) {
+    .clientTestimonials{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }  
+}

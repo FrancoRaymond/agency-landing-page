@@ -1,23 +1,62 @@
 .hero{
-    padding: 7rem 0;
-    background-image: url('../../assets/images/mobile/image-header.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 7rem 0;
+  background-image: url('../../assets/images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1{
+  color: white;
+  font-size: 3.1rem;
+  max-width: 20rem;
+  text-align: center;
+  font-family: 'Fraunces';
+}
+.hero img{
+  margin-top: 3rem;
+  size: 4rem;
+  height: 5rem;
+}
+
+@media (min-width:37.5rem) {
+  .hero{
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
   }
   .hero h1{
-    color: white;
-    font-size: 3.1rem;
-    max-width: 20rem;
-    text-align: center;
-    font-family: 'Fraunces';
+    max-width: unset;
+  }
+  .hero{
+    background-image: url('../../assets/images/desktop/image-header.jpg');
+    padding: 10rem 0;
+    height: 100%;
   }
   .hero img{
-    margin-top: 3rem;
-    size: 4rem;
-    height: 5rem;
+    margin-top: 2rem;
+    size: unset;
+    height: unset;
   }
+}
+
+
+/*  MEDIUM DEVICES  */
+
+@media (min-width:47rem) {
+  .hero{
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+  } 
+}
+
+/* LARGE DEVICES  */
+
+@media (min-width:64rem) {
+  .hero{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
